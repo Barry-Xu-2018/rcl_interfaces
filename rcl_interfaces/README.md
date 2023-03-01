@@ -33,6 +33,15 @@ The ROS API for a node will be as follows inside the node's namespace.
  * `set_parameters`: `SetParameters`
   * Set parameters on this node.
 
+## Services for log configuration
+
+The services will created under node which enable log service.
+
+* `get_logger_levels`: `GetLoggerLevels`
+  * Get the log level of logger on this node.
+* `set_logger_levels`: `SetLoggerLevels`
+  * Set the log level of logger on this node.
+
 ## Messages (.msg)
 * [FloatingPointRange](msg/FloatingPointRange.msg): Represents bounds and a step value for a floating point typed parameter
 * [IntegerRange](msg/IntegerRange.msg): Represents bounds and a step value for an integer typed parameter
@@ -46,6 +55,8 @@ The ROS API for a node will be as follows inside the node's namespace.
 * [ParameterType](msg/ParameterType.msg): Enum definitions for denoting a parameter value's type
 * [ParameterValue](msg/ParameterValue.msg): The associated value and type of a parameter
 * [SetParameterResult](msg/SetParametersResult.msg): Result message indicating whether a set parameters event succeeded
+* [LoggerLevel](msg/LoggerLevel.msg): A message represents logger name and corresponding log level
+* [SetLoggerLevelResult](msg/SetLoggerLevelResult.msg): Result message indicating whether setting log level succeeded
 
 ## Services (.srv)
 * [DescribeParameters](srv/DescribeParameters.srv): Request a list of descriptions for a specified list of parameters.
@@ -54,6 +65,8 @@ The ROS API for a node will be as follows inside the node's namespace.
 * [ListParameters](srv/ListParameters.srv): Get the list of parameters given a list of prefixes
 * [SetParameters](srv/SetParameters.srv): Add or change a list of parameters individually
 * [SetParametersAtomically](srv/SetParametersAtomically.srv): Add or change all parameters in a list or none at all.
+* [GetLoggerLevels](srv/GetLoggerLevels.srv): Get the log level of a specific list of logger name
+* [SetLoggerLevels](srv/SetLoggerLevels.srv): Set the log level of a specific list of logger name
 
 ## Quality Declaration
 This package claims to be in the **Quality Level 1** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
