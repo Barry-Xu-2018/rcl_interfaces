@@ -28,7 +28,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ParameterValue.msg"
   "msg/SetParametersResult.msg"
   "msg/LoggerLevel.msg"
-  "msg/SetLoggerLevelResult.msg"
+  "msg/SetLoggerLevelsResult.msg"
   "srv/DescribeParameters.srv"
   "srv/GetParameters.srv"
   "srv/GetParameterTypes.srv"
