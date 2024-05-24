@@ -22,6 +22,7 @@ set(msg_files
   "msg/GoalInfo.msg"
   "msg/GoalStatus.msg"
   "msg/GoalStatusArray.msg"
+  "msg/GoalResponse.msg"
 )
 set(srv_files
   "srv/CancelGoal.srv"
